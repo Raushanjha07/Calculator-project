@@ -1,0 +1,36 @@
+function performOperation(operator) {
+    var temp = f.dis.value;
+    var lastChar = temp.charAt(temp.length - 1);
+
+    switch (operator) {
+        case '+':
+        case '-':
+        case '*':
+        case '/':
+            if (lastChar == '+' || lastChar == '-' || lastChar == '*' || lastChar == '/') {
+                f.dis.value = temp.substring(0, temp.length - 1);
+            }
+            f.dis.value += operator;
+            break;
+        default:
+            // Handle other cases or provide an error message
+            break;
+    }
+}
+
+function sum() {
+    performOperation('+');
+}
+
+function sub() {
+    performOperation('-');
+}
+
+function mul() {
+    performOperation('*');
+}
+
+function div() {
+    performOperation('/');
+}
+
