@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
+</head>
+<body>
+    
+    <div id="main">
+        <form name="f">
+     <input type="text" name="dis" placeholder="0" id="yo"> 
+      <br>
+     <input type="button" value="1" onclick="f.dis.value+=1">
+     <input type="button" value="2" onclick="f.dis.value+=2">
+     <input type="button" value="3" onclick="f.dis.value+=3">
+     <input type="button" value="+" onclick="sum()">
+     <br>
+     <input type="button" value="4" onclick="f.dis.value+=4">
+     <input type="button" value="5" onclick="f.dis.value+=5">
+     <input type="button" value="6" onclick="f.dis.value+=6">
+     <input type="button" value="-" onclick="sub()">
+     <br>
+     <input type="button" value="7" onclick="f.dis.value+=7">
+     <input type="button" value="8" onclick="f.dis.value+=8">
+     <input type="button" value="9" onclick="f.dis.value+=9">
+     <input type="button" value="/" onclick="div()">
+     <br>
+     <input type="button" value="c" onclick="f.dis.value=''">
+     <input type="button" value="0" onclick="f.dis.value+='0'">
+     <input type="button" value="=" onclick="f.dis.value=eval(f.dis.value)">
+     <input type="button" value="x" onclick="mul()">
+
+
+
+    </form>
+    </div>
+
+    
+</body>
+</html>
